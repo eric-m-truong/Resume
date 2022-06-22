@@ -1,0 +1,74 @@
+\cvsection{Projects}
+% https://zety.com/blog/projects-on-resume#:~:text=Projects%20can%20be%20listed%20on,in%20the%20education%20resume%20section.
+
+\begin{cventries}
+  \cventry
+    {Embedded Systems Design} % Empty position
+    {Simple Two Channel Oscilloscope} % Project
+    {Santa Cruz, CA} % Empty location
+    {Sept 2021 - June 2021} % Empty date
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {Displayed wave-forms and frequency readings onto an LCD screen. Supported vertical and horizontal scaling.}
+        \item {Read voltage values on 2 GPIO pins using an ADC. Data points are transferred from the ADC buffer to ping-pong buffers via DMA.}
+        \item {Processing is done on the ping-pong buffers to calculate the frequency, select appropriate data points to render, and detect triggers.}
+        \item {User input enabled through knobs and command line. Knobs are potentiometers monitored by the ADC. Command line communicates over UART and is parsed on the microcontroller.}
+      	\item {Designed for the PSoC-6 microcontroller and written in C.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Principles of Computer Systems Design} % Empty position
+    {Pintos Modification Labs} % Project
+    {Santa Cruz, CA} % Empty location
+    {Jan 2022 - March 2022} % Empty date
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {Improve and implement aspects of the Pintos operating system including the ability to block threads, priority-based thread scheduling, and priority donation.}
+        \item {Dealt with multi-threading and used concurrency primitives. Also, implemented condition variables and locks into Pintos using the OS's semaphore implementation.}
+        \item {Written in C. Version control with Git. Debugging done with GDB.}
+      \end{cvitems}
+    }
+    
+  \cventry
+    {Engineering Design Project} % Empty position
+    {PLUX: Smart Outlet} % Project
+    {Santa Cruz, CA} % Empty location
+    {Jan 2022 - Present} % Empty date
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {Worked on a team to create an IoT device that plugs into an outlet and allows for remote control and monitoring of power consumption.}
+        \item {Programmed an ESP~32 to send connect to WiFi and publish/receive MQTT messages in C++ (via Arduino IDE).}
+        \item {Used Python to create an MQTT client that parses messages and writes to an SQLite3 database on an Oracle Cloud instance.}
+        \item {Designed the architecture and protocol for sending messages between the smart plug, server, and web-client.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Not affiliated with UCSC} % Empty position
+    {Unnamed Bus System Project} % Project
+    {Santa Cruz, CA} % Empty location
+    {Jan 2021 - Present} % Empty date
+    {
+      \begin{cvitems} % Description(s) bullet points
+      	\item {Contributed to the creation of an integrated hardware and software system to track a transit bus's position and  route, as well as provide a console for the bus driver to interact with the system.}
+      	\item {Designed and wrote the program flow for the Driver Console in C. Uses a simplified state-machine design pattern that makes use of function pointers to encapsulate each state.}
+      	\item {Use CMake to cross compile for RP2040 on the Raspberry Pi Pico.}
+      \end{cvitems}
+    }
+    
+%   \cventry
+%     {Introduction to Software Engineering}
+%     {BAM! File Sharing Web App}
+%     {Santa Cruz, CA}
+%     {March 2022 - Present}
+%     {
+%         \begin{cvitems}
+%             \item {Worked on a Scrum team as Product Owner and followed Scrum principles.}
+%             \item {Is a web app that allows devices to share files by fist-bumping. Files are sent peer-to-peer via WebTorrent.}
+%             \item {Designed and wrote the back-end architecture the logic for connecting two clients and sending files.}
+%             \item {Built with React, Express, and NodeJS.}
+%         \end{cvitems}
+%     }
+
+\end{cventries}

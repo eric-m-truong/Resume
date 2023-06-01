@@ -55,7 +55,7 @@ You can see [PDF](https://github.com/eric-m-truong/Resume/blob/master/examples/r
 
 | Page. 1 | Page. 2 |
 |:---:|:---:|
-| [![Résumé](https://raw.githubusercontent.com/eric-m-truong/Resume/master/examples/resume-0.png)](https://github.com/eric-m-truong/Resume/blob/master/examples/resume.pdf)  | [![Résumé](https://raw.githubusercontent.com/eric-m-truong/Resume/master/examples/resume-1.png)](https://github.com/eric-m-truong/Resume/blob/master/examples/resume.pdf) |
+| [![Résumé](https://raw.githubusercontent.com/eric-m-truong/Resume/master/examples/resume-1.png)](https://github.com/eric-m-truong/Resume/blob/master/examples/resume.pdf)  | [![Résumé](https://raw.githubusercontent.com/eric-m-truong/Resume/master/examples/resume-2.png)](https://github.com/eric-m-truong/Resume/blob/master/examples/resume.pdf) |
 
 <!-- #### Cover Letter
 
@@ -83,6 +83,7 @@ You can [install TeX from upstream](https://tex.stackexchange.com/q/1092) (recom
 
 If you don't want to install the dependencies on your system, this can also be obtained via [Docker](https://docker.com).
 
+
 #### Usage
 
 At a command prompt, run
@@ -99,6 +100,8 @@ $ docker run --rm --user $(id -u):$(id -g) -i -w "/doc" -v "$PWD":/doc thomaswei
 
 In either case, this should result in the creation of ``{your-cv}.pdf``
 
+For usage in automatically updating the preview images (only useful for GitHub), install `poppler-utils`.
+
 
 ## Credit
 
@@ -109,6 +112,11 @@ In either case, this should result in the creation of ``{your-cv}.pdf``
 [**Roboto**](https://github.com/google/roboto) is the default font on Android and ChromeOS, and the recommended font for Google’s visual language, Material Design.
 
 [**Source Sans Pro**](https://github.com/adobe-fonts/source-sans-pro) is a set of OpenType fonts that have been designed to work well in user interface (UI) environments.
+
+These can be installed by doing
+```bash
+sudo apt-get install texlive-fonts-extra
+```
 
 
 ## Contact
